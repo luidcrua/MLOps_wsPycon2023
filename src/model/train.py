@@ -200,6 +200,8 @@ def evaluate_and_log(experiment_id='99',config=None,):
             [wandb.Image(hard_example, caption=str(int(pred)) + "," +  str(int(label)))
              for hard_example, pred, label in zip(hardest_examples, preds, true_labels)]})
 
+# a new comment, just to trigger github action
+
 epochs = [50,100]
 for id,epoch in enumerate(epochs):
     train_config = {"batch_size": 128,
